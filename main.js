@@ -26,9 +26,9 @@ const db = getFirestore(app)
 const siswaCollection = collection(db, "siswa")
 
 // Fungsi untuk menampilkan data siswa
-export async function tampilkanDaftarsiswa() {
+export async function tampilkanDaftarSiswa() {
   // ambil snapshot data dari koleksi siswa
-  const snapshot = await getDoc(siswaCollection)
+  const snapshot = await getDocs(siswaCollection)
   
   // ambil elemen tabel data siswa
   const tabel = document.getElementById("tabelData")
